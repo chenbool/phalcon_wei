@@ -1,0 +1,2 @@
+[Mon, 04 Dec 17 00:57:07 +0800][ERROR] {"file":"C:\\Debug\\www\\phalcon\\public\\index.php","line":130,"code":2,"msg":"App\\Frontend\\Controllers\\PhpmyadminController handler class cannot be loaded","trace":"#0 [internal function]: Phalcon\\Mvc\\Dispatcher->_throwDispatchException('App\\\\Frontend\\\\Co...', 2)\n#1 [internal function]: Phalcon\\Dispatcher->dispatch()\n#2 C:\\Debug\\www\\phalcon\\public\\index.php(130): Phalcon\\Mvc\\Application->handle()\n#3 C:\\Debug\\www\\phalcon\\public\\index.php(140): Application->main()\n#4 {main}"}
+

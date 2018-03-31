@@ -1,0 +1,472 @@
+﻿/* 登陆页CSS */
+.signin-view {
+    background: url(../images/sign-bg.png) no-repeat;
+    background-size:100% 100% ;
+}
+
+.signin {
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;
+    text-align: center;
+}
+.signin-header {
+    margin-top: 0.8rem;
+    margin-bottom:0.2rem;
+}
+.signin-header .system-logo{
+		width: auto;
+		height: auto;
+		margin: 0 auto;
+		max-width: 600px;
+		max-height: 300px;
+}
+.signin-header .system-logo img {
+    width: 50%;
+    height: 50%;
+}
+.signin-header .system-name{
+		width: 100%;
+		height: 0.3rem;
+		line-height: 0.3rem;
+		text-align: center;
+		color: #e9b747;
+		font-size: 0.2rem;
+		font-family: "微软雅黑";
+}
+.signin-content > .list {
+    width: 100%;
+    height: 1rem;
+    margin-bottom: 0.1rem;
+}
+.signin-content > p{
+		width: 100%;
+		height: 0.25rem;
+}
+.signin-content > p > span{
+		display: block;
+		width: 100%;
+		height: 0.25rem;
+		line-height: 0.25rem;
+		font-size: 0.14rem;
+		text-align: center;
+		color: #fa2e42;
+}
+.signin-content > .list > .item {
+    height: 0.45rem;
+    line-height: 0.45rem;
+    margin-bottom: 0.1rem;
+    border-width: 0px;
+    border-radius: 0.05rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0;
+}
+
+.signin-content > .list > .item > .input-icon {
+		display:inline-block ;
+		vertical-align: top;
+		font-size: 0.2rem;
+    width: 0.4rem;
+    color: #e9b747;
+    text-align: center;
+    height: 0.45rem;
+    margin-top: 0.24rem;
+}
+
+.signin-content > .list > .item > input {
+    color: white;
+    font-size: 0.14rem;
+    padding: 0rem;
+    border: none;
+    background-color: transparent !important;
+}
+
+.signin-content > .signin-action {
+    padding: 0.05rem 0.1rem;
+}
+
+.signin-action .sign_button{
+	width: 100%;
+}
+
+.signin-footer {
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+.signin-footer > a {
+    color: #e8af2e;
+    font-size: .14rem;
+    text-decoration: none;
+}
+.signin-tools {
+    padding: 0px;
+    height: 30px !important;
+}
+
+.signin-tools p {
+    font-size: 12px;
+    white-space: normal;
+    text-align: left;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.signin-tools p a {
+    color: #666;
+}
+
+.signin-tools.item-select {
+    padding: 16px;
+}
+
+.signin-tools select {
+    left: 0px;
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+    background-color: #1d1d25;
+}
+
+.signin-tools.item-checkbox {
+    border: none !important;
+}
+
+.signin-tools .item-checkbox {
+    padding: 5px;
+    padding-top: 10px;
+    padding-left: 35px;
+    font-size: 12px;
+    text-align: left;
+    border: none;
+    color: rgb(200, 200, 200);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.signin-tools .item-checkbox .checkbox-icon:before {
+    width: 14px;
+    height: 14px;
+    margin-top: 9px;
+    border-radius: 2px !important;
+}
+
+.signin-tools .item-checkbox .checkbox-icon:after {
+    position: static;
+    margin-top: -12px;
+}
+
+.spinner-view {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 4;
+    opacity: 0;
+    background-color: rgb(31, 32, 36);
+    -webkit-transition: opacity 300ms linear;
+    -moz-transition: opacity 300ms linear;
+    -ms-transition: opacity 300ms linear;
+    -o-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+}
+
+.spinner-view.open {
+    opacity: 100;
+    background-color: rgb(31, 32, 36);
+}
+
+.spinner-view .message {
+    top:50%;
+    width:100%;
+    opacity: 0;
+    padding-top:30px;
+    text-align: center;
+    position: absolute;
+    color: rgb(200, 200, 200);
+    -webkit-transition: opacity 300ms linear;
+    -moz-transition: opacity 300ms linear;
+    -ms-transition: opacity 300ms linear;
+    -o-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+}
+
+.spinner-view .message.fadein {
+    opacity: 100;
+}
+
+/*注册页样式*/
+
+input[disabled], select[disabled], textarea[disabled], input[readonly]:not(.cloned-text-input), textarea[readonly]:not(.cloned-text-input), select[readonly]{
+	background: transparent !important;
+}
+.sign_up{
+	width: 100%;
+	height: 100%;
+	padding-top:0.2rem ;
+	position: relative;
+}
+.remake{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	display: flex;
+	align-items: center;
+	background: rgba(0,0,0,.9);
+	z-index: 100;
+}
+.remakecon{
+	width: 80%;
+	margin-left: 10%;
+	background: #fff;
+	border-radius:0.04rem ;
+	text-align: center;
+}
+.remakecon header{
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.14rem;
+	border-top-left-radius:0.04rem ;
+	border-top-right-radius:0.04rem ;
+	background: #e8af2e;
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+.remakecon header .close{
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	right: 0;
+	top:0;
+	font-size: 0.3rem;
+}
+#versvg svg{
+	width: 1.5rem;
+	height: 0.5rem;
+	margin: 0.1rem auto;
+}
+.remakecon .newinput{
+	border: none;
+	padding: 0;
+}
+.remakecon .newinput .input-text{
+	color: #3c3c3c;
+	border: none;
+}
+.ver_btn{
+	margin:0.1rem auto;
+}
+.newinput{
+	width: 100%;
+	height: 0.51rem;
+	border-bottom:1px solid #343438 ;
+	padding-top:0.2rem ;
+}
+.sign_up_list{
+	width: 80%;
+	margin-left: 10%;
+}
+.input_iphone_code{
+	position: relative;
+}
+.input_iphone_code .code_btn{
+	position: absolute;
+	right: 0;
+	top:0.1rem;
+	height: 0.3rem;
+	width: 1rem;
+	color: #abacae;
+	line-height: 0.3rem;
+	text-align: center;
+	font-size: 0.12rem;
+	background: transparent;
+	border-radius:0.05rem ;
+	border: 1px solid #343438;
+	padding: 0;
+}
+.newinput .input-text{
+	display: inline-block;
+	vertical-align: top;
+	width: 0.6rem;
+	height: 0.3rem;
+	text-align: right;
+	font-size: 0.12rem;
+	line-height: 0.3rem;
+	color: white;
+}
+.newinput input{
+	display: inline-block;
+	vertical-align: top;
+	border: none;
+	padding: 0;
+	width: 2rem;
+	height: 0.3rem;
+	color: #fdbe19;
+	background: transparent;
+	font-size: 0.14rem;
+	line-height: 0.3rem;
+	margin-left:0.1rem ;
+}
+.sign_up_check{
+	width: 100%;
+	height: 1rem;
+	margin-top: 0.2rem;
+	line-height: 0.3rem;
+	color: white;
+}
+.sign_up_check .item-content p{
+	color: white;
+	font-size: 0.12rem;
+	padding-left:0.35rem;
+}
+.sign_up_check a{
+	vertical-align: top;
+	display: inline-block;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	width: auto;
+	color: white;
+	font-size: 0.14rem;
+	text-decoration: underline;
+}
+.sign_up_check .item{
+	background: transparent;
+	border: none;
+	padding:0 ;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	color: #FFFFFF;
+	font-size: 0.12rem;
+	position: relative;
+	width: 32%;
+	display: inline-block;
+	vertical-align: top;
+}
+.sign_up_check .item span{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	border: 1px solid #343438;
+	border-radius:0.02rem ;
+}
+.sign_up_check .item-checkbox .checkbox{
+	top:0.05rem;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+.sign_up_check .item-checkbox .checkbox .checkbox-icon{
+	width: 0.2rem;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	text-align: center;
+}
+.sign_up_check .checkbox input:before, .checkbox-icon:before{
+	background: transparent !important;
+	border-radius:0 ;
+	border: 1px solid #343438 !important;
+	border-color: #343438 !important;
+}
+.sign_up_btn{
+	width: 70%;
+	margin-left: 15%;
+	margin-top:0.2rem;
+}
+.sign_up_check .item-content span{
+	display: inline-block;
+	width: 80%;
+	height: 0.3rem;
+	font-size: 0.12rem;
+	border: none;
+	margin-left: 0.3rem;
+}
+.sign_up_check .checkbox input:after, .checkbox-icon:after{
+	border-color: #fdbe19;
+	width: 0.14rem;
+	height: 0.06rem;
+}
+.agreement{
+	background: #1b1b1d !important;
+}
+.agreement pre{
+	font-size: 0.14rem;
+	color: white;
+}
+
+/*注册二维码页面样式*/
+.sign_up_erweima{
+	background:#1b1b1b;
+	width: 100%;
+	height: 100%;
+}
+.sign_up_erweima header{
+	height: 0.9rem;
+	width: 100%;
+	text-align: center;
+	padding:0.3rem 0 0.2rem 0rem;
+}
+.sign_up_erweima header h2{
+	font-size: 0.13rem;
+	color: white;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	margin: 0;
+}
+.sign_up_erweima header h2 span{
+	font-size: 0.15rem;
+}
+.sign_up_erweima header p{
+	height: 0.2rem;
+	line-height:0.2rem;
+	color: #707070;
+	font-size: 0.11rem;
+}
+.sign_up_erweima article{
+	width: 60%;
+	height: 2.8rem;
+	background: white;
+	margin-left: 20%;
+	border-radius:0.1rem ;
+	padding-top: 0.4rem;
+	text-align: center;
+	color: #838383;
+}
+.sign_up_erweima section{
+	position: absolute;
+	top:2rem;
+	left:30%;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0 auto;
+}
+.sign_up_erweima section img{
+	width: 100%;
+	height: 100%;
+}
+.sign_up_erweima article h3{
+	margin: 0;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.14rem;
+	color: #838383;
+}
+.sign_up_erweima article h3 span{
+	font-size: 0.15rem;
+	color: #22bd39;
+}
+.sign_up_erweima article p{
+	height: 0.2rem;
+	line-height: 0.2rem;
+	margin: 0;
+	font-size: 0.13rem;
+}
+.sign_up_erweima a{
+	text-decoration: none;
+	display: block;
+	width: 66%;
+	margin-left: 17%;
+	margin-top: 0.4rem;
+}
